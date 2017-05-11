@@ -42,16 +42,19 @@ http://deprojectwebsite.s3-website-us-east-1.amazonaws.com/statsplot.png
 ### Robustness and fault tolerance: 
 
   The good: My system is not being run localy. If something happens with Spark my data is safe of Postgres. Even if my plots wont update one day the previous days results are still up on my website.
+  
   The bad: I'm relying on AWS to run smoothly since my unstructured data is being dumped to S3 and my website is hosted there as well.
 
 ### Low latency reads and updates:
 
   The good: My statistics on my website are available instantaneously. Using Spark allows me to update my db fairly quickly if I decide to update it more than once a day.
+  
   The bad: My data is not so big and hence I am able to get my query results quickly now. But if my data was much much larger I would also need to use Spark to get my statistics instead of just a regular python script. 
 
 ### Scalability:
 
   The good: Using AWS helps me scale up at any desired point. 
+  
   The bad: Use Spark for step four would be the next goal. (Also to predict weather using a trained machine learning model when dealing with real time data)
   
 ### Generalization:
@@ -70,11 +73,13 @@ http://deprojectwebsite.s3-website-us-east-1.amazonaws.com/statsplot.png
 ### Minimal maintenance:
 
   The good: Because of cron my entire system can technically run without me doing anything.
+  
   The bad: Ideally I would want to lower the number of different cron jobs I have and use Airflow to schedule my automatic tasks to ensure my data is updated before I try to generate some new statistic. 
 
 ### Debuggability:
    
    The good: I am able to detect if my data is not streaming really easily, or if a cluster didn't start or terminated because of some reason. 
+   
    The bad: Hard to say, any sort of Debugging in this field is difficult for me since I am new to this.
 
 
