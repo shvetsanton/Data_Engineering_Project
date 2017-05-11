@@ -23,6 +23,8 @@ Then I used Spark to extracted the information I am interested in and stored it 
 I am able to keep my database up to date by having a .sh file on an EC2 instance that spins up a cluster, executes my python script to update my database, and finally shuts down my cluster.
 I run the .sh script once a day to update my database.
 
+<img src='https://github.com/shvetsanton/Data_Engineering_Project/blob/master/table_preview.png'>
+
 ## Step 4:
 
 In order to get the statistics I am interested in I have a python script to do sql queries that return my desired output. 
