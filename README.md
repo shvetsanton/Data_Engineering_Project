@@ -35,7 +35,7 @@ The contents of my website get updated because I have my python script on an ano
 
 http://deprojectwebsite.s3-website-us-east-1.amazonaws.com
 
-http://deprojectwebsite.s3-website-us-east-1.amazonaws.com/statsplot.png
+http://deprojectwebsite.s3-website-us-east-1.amazonaws.com/statsplot
 
 ## Comparing my system to the 8 Desired properties of a Big Data system:
 
