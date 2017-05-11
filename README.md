@@ -37,6 +37,8 @@ http://deprojectwebsite.s3-website-us-east-1.amazonaws.com
 
 http://deprojectwebsite.s3-website-us-east-1.amazonaws.com/statsplot
 
+http://deprojectwebsite.s3-website-us-east-1.amazonaws.com/statstable
+
 ## Comparing my system to the 8 Desired properties of a Big Data system:
 
 ### Robustness and fault tolerance: 
